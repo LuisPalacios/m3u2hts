@@ -1,13 +1,12 @@
 m3u2hts
 =======
 
-Generate TVHeadend 3.x channel/tag configuration files from VLC compatible IPTV M3U playlist.
+Genera MUXES y CANALES en Tvheadend 3.9 partiendo de un fichero playlist .M3U. Este fork parte del trabajo Gregor Rudolf (Fuente en [GitHub grudolf/m3u2hts](https://github.com/grudolf/m3u2hts/blob/master/m3u2hts.py)) y está especialmente probado para funcionar con la lista de programas de Movistar TV
 
-
-Usage
+Uso
 -----
 
-Use ``m3u2hts.py [options] inputfile`` or ``m3u2hts.py -h`` for help with parameters.
+Usar ``m3u2hts.py [opciones] inputfile`` or ``m3u2hts.py -h`` for help with parameters.
 If you want to import the configuration directly, you should stop the TVHeadend service and delete current config first. Ubuntu example::
 
     sudo service tvheadend stop
@@ -119,6 +118,6 @@ If you're lucky and your IPTV provider uses one service per mux and identical na
 OTOH, if your provider has 50+ services on a mux for a single working channel and wildly mismatched names, you're better off if you let m3u2hts create channels and optional EPG info with ``-o channel`` option and manually link them to scanned services.
 
 
-Licence
--------
-Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
+Licencia
+--------
+Este código se licencia bajo MIT: http://www.opensource.org/licenses/mit-license.php
